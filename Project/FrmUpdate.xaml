@@ -1,0 +1,159 @@
+﻿<Window x:Class="Project.FrmUpdate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:Project"
+        mc:Ignorable="d"
+            Title="Update User" Height="600" Width="900">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="RoundButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="RoundButtonStyle2">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="5" Background="#FF38EADC">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="DataGrid" x:Key="StyledDataGrid">
+            <Setter Property="AlternatingRowBackground" Value="LightGray"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="Gray"/>
+            <Setter Property="VerticalGridLinesBrush" Value="Gray"/>
+            <Setter Property="ColumnHeaderHeight" Value="35"/>
+            <Setter Property="RowHeight" Value="35"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="CanUserDeleteRows" Value="False"/>
+            <Setter Property="CanUserResizeRows" Value="False"/>
+            <Setter Property="CanUserReorderColumns" Value="False"/>
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#007ACC"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="TextBox" x:Key="RoundBox">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="7">
+                            <ScrollViewer x:Name="PART_ContentHost" Height="30" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Background="AliceBlue"></Grid>
+        <Button Grid.Row="0" Grid.Column="0"  x:Name="btnCancel" Style="{StaticResource RoundButtonStyle}" Width="107" HorizontalAlignment="Left" Click="btnCancel_Click" Height="35"  >
+            <WrapPanel Margin="5,5,12,5" HorizontalAlignment="Left">
+                <Image Width="20" Height="20" Source="https://cdn-icons-png.freepik.com/256/157/157910.png?semt=ais_hybrid" HorizontalAlignment="Left" Margin="2,0,0,0" />
+                <TextBlock Text="Back" VerticalAlignment="Center" Margin="15,0,0,0" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
+            </WrapPanel>
+
+        </Button>
+
+        <Grid Background="AliceBlue" Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="UPDATE USER PROFILE" FontFamily="Arial" FontSize="18" FontWeight="Bold" VerticalAlignment="Center" Cursor="Hand" Width="310" HorizontalAlignment="Left" Padding="36,0,0,0" Margin="-140,0,0,0"/>
+
+        </Grid>
+
+
+        <StackPanel  Background="White" Name="Information" Grid.Row="1" Grid.Column="0">
+
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">Name:</TextBlock>
+            <TextBox x:Name="txtName" VerticalContentAlignment="Center" Margin="10,5,20,5" Padding="5" BorderThickness="1" Style="{StaticResource RoundBox}"/>
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">User name:</TextBlock>
+            <TextBox x:Name="txtUsername" VerticalContentAlignment="Center" Margin="10,5,20,5" Padding="5" BorderThickness="1" Style="{StaticResource RoundBox}" IsReadOnly="True"/>
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">Email:</TextBlock>
+            <TextBox x:Name="txtEmail" VerticalContentAlignment="Center" Margin="10,5,20,5" Padding="5" BorderThickness="1" Style="{StaticResource RoundBox}" IsReadOnly="True"/>
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">Phone number :</TextBlock>
+            <TextBox x:Name="txtPhone" VerticalContentAlignment="Center" Margin="10,5,20,5" Padding="5" BorderThickness="1" Style="{StaticResource RoundBox}"/>
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">Password:</TextBlock>
+            <TextBox x:Name="txtPassword" VerticalContentAlignment="Center" Margin="10,5,20,5" Padding="5" BorderThickness="1" Style="{StaticResource RoundBox}"/>
+
+            <WrapPanel>
+                <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">Role:</TextBlock>
+                <ComboBox Width="209" Margin="39,10,5,0" VerticalAlignment="Center" x:Name="cboRole" Height="31" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            </WrapPanel>
+
+            <Button x:Name="btnUpdate" Content="UPDATE"  IsDefault="True" Width="120" Margin="62,41,10,10" Style="{StaticResource RoundButtonStyle2}" Height="35" FontWeight="Bold" FontSize="16" BorderBrush="#FF923A3A" Foreground="#FF530E0E" OpacityMask="#FF470A0A" Click="btnUpdate_Click" HorizontalAlignment="Right" />
+        </StackPanel>
+
+        <StackPanel  Background="White" Name="Profile" Grid.Row="1" Grid.Column="1">
+
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center" HorizontalAlignment="Left">Sex:</TextBlock>
+            <ComboBox Name="cboSex" Width="165" Height="34" HorizontalAlignment="Left" VerticalAlignment="Center"  VerticalContentAlignment="Center" Margin="13,8,0,0" >
+                <ComboBoxItem>Male</ComboBoxItem>
+                <ComboBoxItem>Female</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">City:</TextBlock>
+            <TextBox x:Name="txtCity" VerticalContentAlignment="Center" Margin="10,5,20,5" Padding="5" BorderThickness="1" Style="{StaticResource RoundBox}"/>
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">Ward:</TextBlock>
+            <TextBox x:Name="txtWard" VerticalContentAlignment="Center" Margin="10,5,20,5" Padding="5" BorderThickness="1" Style="{StaticResource RoundBox}"/>
+
+            <TextBlock FontSize="18" FontFamily="Arial" FontWeight="Bold" Margin="10,10,5,0" VerticalAlignment="Center">District:</TextBlock>
+            <TextBox x:Name="txtDistrict" VerticalContentAlignment="Center" Margin="10,5,20,5" Padding="5" BorderThickness="1" Style="{StaticResource RoundBox}"/>
+            <WrapPanel>
+                <Button   Width="114" Margin="10" HorizontalAlignment="Left" Style="{StaticResource RoundButtonStyle2}" Height="34" VerticalAlignment="Top" FontWeight="Bold" Click="Button_Click">
+                    Import new Image
+                </Button>
+
+                <!-- Placeholder for the avatar image -->
+                <Border BorderBrush="Gray" BorderThickness="1" Margin="10" Width="150" Height="150">
+                    <Image x:Name="imgAvatar" Stretch="UniformToFill"/>
+                </Border>
+            </WrapPanel>
+
+
+        </StackPanel>
+
+    </Grid>
+</Window>
+

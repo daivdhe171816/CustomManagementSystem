@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\First_Csharp_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBFFDC0-1CAF-4EDE-856E-0273971D35D2}|Project\\Project.csproj|d:\\c#\\first_csharp_project\\project\\customercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0BBFFDC0-1CAF-4EDE-856E-0273971D35D2}|Project\\Project.csproj|solutionrelative:project\\customercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBFFDC0-1CAF-4EDE-856E-0273971D35D2}|Project\\Project.csproj|d:\\c#\\first_csharp_project\\project\\customercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBFFDC0-1CAF-4EDE-856E-0273971D35D2}|Project\\Project.csproj|solutionrelative:project\\customercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBFFDC0-1CAF-4EDE-856E-0273971D35D2}|Project\\Project.csproj|d:\\c#\\first_csharp_project\\project\\frmprofileforuser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBFFDC0-1CAF-4EDE-856E-0273971D35D2}|Project\\Project.csproj|solutionrelative:project\\frmprofileforuser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmProfileForUser.xaml.cs",
+              "DocumentMoniker": "D:\\C#\\First_Csharp_Project\\Project\\FrmProfileForUser.xaml.cs",
+              "RelativeDocumentMoniker": "Project\\FrmProfileForUser.xaml.cs",
+              "ToolTip": "D:\\C#\\First_Csharp_Project\\Project\\FrmProfileForUser.xaml.cs",
+              "RelativeToolTip": "Project\\FrmProfileForUser.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T23:31:59.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerControl.xaml",
+              "DocumentMoniker": "D:\\C#\\First_Csharp_Project\\Project\\CustomerControl.xaml",
+              "RelativeDocumentMoniker": "Project\\CustomerControl.xaml",
+              "ToolTip": "D:\\C#\\First_Csharp_Project\\Project\\CustomerControl.xaml",
+              "RelativeToolTip": "Project\\CustomerControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-15T18:22:53.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerControl.xaml.cs",
+              "DocumentMoniker": "D:\\C#\\First_Csharp_Project\\Project\\CustomerControl.xaml.cs",
+              "RelativeDocumentMoniker": "Project\\CustomerControl.xaml.cs",
+              "ToolTip": "D:\\C#\\First_Csharp_Project\\Project\\CustomerControl.xaml.cs",
+              "RelativeToolTip": "Project\\CustomerControl.xaml.cs",
+              "ViewState": "AQIAACwBAAAAAAAAAAAAAL4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T18:22:52.699Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
